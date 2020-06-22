@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled';
+import Inner_box from './Inner_box'
 
 const Portfolio_wrap = styled.div`
   display: flex;
@@ -12,8 +13,9 @@ const Portfolio_wrap = styled.div`
   transition: background 0.3s;
   position: relative;
   margin-top: 10rem;
+  
 `
-const Inner_box = styled.div`
+const Outer_box = styled.div`
   width:100%;
   height: 500px;
   border-radius: 2px;
@@ -21,6 +23,7 @@ const Inner_box = styled.div`
   text-align:center;
   margin: 2rem 3rem;
   transform: skewY(3deg);
+  overflow-y: scroll;
   transition: background 0.3s;
   .Portfolio_title {
     span {
@@ -37,9 +40,10 @@ const Inner_box = styled.div`
 const Portfolio = () => {
   return (
     <Portfolio_wrap>
-      <Inner_box>
+      <Outer_box>
         <div className="Portfolio_title"><span>Portfolio</span></div>
-      </Inner_box>
+        <Inner_box />
+      </Outer_box>
     </Portfolio_wrap>
   )
 }

@@ -11,7 +11,9 @@ const Title = styled.h2`
   }
 `
 const P = styled.p`
-  color: ${props => props.color || "black"};
+  color: ${props => props.color || "#333333"};
+  margin-top:0.7rem;
+  font-size: 0.7rem;
 `
 
 const WhiteBox = styled.div`
@@ -21,6 +23,8 @@ const WhiteBox = styled.div`
 `
 const BoxList = styled.div`
   display: flex;
+  justify-content: flex-start;
+  text-align:left;
     img {
       width:24px;
       height:24px;
@@ -32,6 +36,7 @@ const BoxList = styled.div`
     color: #333333;
     font-size: 0.8rem;
     margin: 3px 4px;
+    cursor: pointer;
     }
     padding: 3px 0;
 
@@ -50,19 +55,70 @@ const Skils_wrap = styled.div`
   align-items: center;
 `
 
+const skillslist = [
+  {
+    id:1,
+    image :"http://placehold.it/24x24", 
+    text:"HTML / CSS",
+    deep: "~~~~~~~~를 이해하고 있습니다.",
+    toggle: true
+  },
+  {
+    id:2,
+    image :"http://placehold.it/24x24", 
+    text:"JavaScript",
+    deep: "가나다라마바사아자차카타파하 가나다라마바사아자차카타파하 가나다라마바사아자차카타파하",
+    toggle: false
+  },
+  {
+    id:3,
+    image :"https://cdn.worldvectorlogo.com/logos/react-1.svg", 
+    text:"React",
+    deep: "",
+    toggle: false
+  },
+  {
+    id:4,
+    image :"http://placehold.it/24x24", 
+    text:"Node.js",
+    deep: "",
+    toggle: false
+  },
+  {
+    id:5,
+    image :"http://placehold.it/24x24", 
+    text:"Git",
+    deep: "",
+    toggle: false
+  }
+]
 
 const Skill = () => {
+
+  const [id,image,text,deep,toggle] = skillslist;
+  
+  const toggleSkill = (skill) => {
+    skill.toggle = !skill.toggle
+    console.log(skill.toggle)
+  }
+  
   return (
     <Skils_wrap>
       <Title><div>SKILL</div></Title>
       <WhiteBox>
-        <BoxList><img src="http://placehold.it/24x24" alt=""/>
-        <span>HTML / CSS </span>
+        {
+        skillslist.map(skill => (
+        <BoxList key={skill.id}
+        onClick={() =>toggleSkill(skill)}
+        ><img src={skill.image} alt=""/>
+        <div>
+        <span>{skill.text}</span>
+        {skill.toggle && <P>{skill.deep}</P>
+        }
+        </div>
         </BoxList>
-        <BoxList><img src="http://placehold.it/24x24" alt=""/><span>JavaScript</span></BoxList>
-        <BoxList><img src="https://cdn.worldvectorlogo.com/logos/react-1.svg" alt=""/><span>React</span></BoxList>
-        <BoxList><img src="http://placehold.it/24x24" alt=""/><span>Node</span></BoxList>
-        <BoxList><img src="http://placehold.it/24x24" alt=""/><span>Git</span></BoxList>
+        ))}
+      
       </WhiteBox>
     </Skils_wrap>
   )

@@ -27,7 +27,8 @@ const Porfile_box = styled.div`
   border: 1px solid rgba(99,99,99,.08);
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgba(99,99,99,.2);
-    padding: 10px;
+  margin: 5px;
+  padding: 10px;
   .image {
     display: flex;
     justify-content: center;
@@ -79,7 +80,7 @@ const Porfile = () => {
 
   const { name, birthday, text, email, phone } = ProfileState;
 
-  const [toggleTab, setToggleTab ] = useState('about')  
+  const [toggleTab, setToggleTab] = useState('about')  
 
   useEffect(() => {
     console.log(toggleTab)

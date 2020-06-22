@@ -16,13 +16,13 @@ const About_wrap = styled.div`
 `
 const Inner_box = styled.div`
   width:100%;
-  height: 500px;
   border-radius: 2px;
   background: ${props => props.background};
   text-align:center;
   margin: 2rem 3rem;
   transform: skewY(3deg);
   transition: background 0.3s;
+  
   .about_title {
     span {
     font-size: 2rem;
@@ -31,10 +31,29 @@ const Inner_box = styled.div`
     border-bottom: 3px solid white;
     padding-bottom: 4px;
     }
+    margin-bottom: 2rem;
     color:white;
   }
+  .swt {
+    text-align:left;
+    span {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 600;
+      border-bottom: 3px solid black;
+      padding-bottom: 4px;
+    }
+    div {
+      margin-top:1rem;
+    p {
+      margin: 0px;
+      font-size: 1rem;
+      color: black;
+    }
+    }
+  }
   .about_skils {
-    margin-top: 4rem;
+    margin: 4rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,9 +65,32 @@ const About = () => {
     <About_wrap>
       <Inner_box>
         <div className="about_title"><span>ABOUT</span></div>
+         <div className="swt">
+          <span>경력 사항</span>
+          <div>
+          <p>설명설명설명설명설명설명설명설명</p>
+          <p>설명설명설명설명설명설명설명설명</p>
+          <p>설명설명설명설명설명설명설명설명</p>
+          </div>
+           </div> 
+           <div className="swt">
+          <span>경력 사항</span>
+          <div>
+          <p>설명설명설명설명설명설명설명설명</p>
+          <p>설명설명설명설명설명설명설명설명</p>
+          <p>설명설명설명설명설명설명설명설명</p>
+          </div>
+           </div> 
+           <div className="swt">
+          <span>경력 사항</span>
+          <div>
+          <p>설명설명설명설명설명설명설명설명</p>
+          <p>설명설명설명설명설명설명설명설명</p>
+          <p>설명설명설명설명설명설명설명설명</p>
+          </div>
+           </div> 
         <div className="about_skils">
           <Skils />
-
         </div>
       </Inner_box>
     </About_wrap>
