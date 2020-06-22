@@ -7,7 +7,6 @@ import Footer from './Footer';
 const App = () => {
   return (
     <div>
-      <Header />
       <Profile />
       <Footer />
     </div>

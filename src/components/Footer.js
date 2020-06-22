@@ -34,8 +34,13 @@ const Footers = styled.div`
       justify-content: center;
       transition: background 2s;
        &:hover {
-         background: #454545;
+         background: green;
          cursor:pointer;
+       }
+       img {
+         width: 60px;
+         height: 60px;
+         border-radius:50px;
        }
     }
   }
@@ -45,18 +50,16 @@ const Footer = () => {
 
   return (
     <Footers>
-      <h2>CONTANT</h2>
-      <p><span>Phone : </span>010-1234-5678</p>
-      <p><span>Mail : </span>MyMail@gmail.com</p>
+      <h2>Junho Ham</h2>
       <div className="links">
         <a href="https://github.com/beginal" target="blank">
           <div className="moveit">
-            <img src="http://placehold.it/30x30" alt="github" ></img>
+            <img src="image/github.png" alt="github" ></img>
           </div>
         </a>
-        <a href="/">
+        <a href="mailto:example@gmail.com">
           <div className="moveit">
-            <img src="http://placehold.it/30x30" alt="" ></img>
+            <img src="image/mail.png" alt="email" ></img>
           </div>
         </a>
       </div>

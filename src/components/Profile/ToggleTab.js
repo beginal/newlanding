@@ -10,7 +10,7 @@ const ToggleButton = styled.div`
   background: #cccccc;
   position: absolute;
   border-radius:0 0 5px 5px;
-  right:0;
+  right:7px;
   box-shadow: 2px 2px 2px rgba(99,99,99,.2);
   bottom: -29px;
   transition: background .5s;
@@ -33,8 +33,8 @@ export const PortfolioButton = ({clickEvent}) => {
 
 export const AboutButton = ({clickEvent}) => {
   return (
-    <ToggleButton bgcolor="#459dfa" onClick={clickEvent} style={{right: "101px"}}>
-      <div>About</div>
+    <ToggleButton bgcolor="#459dfa" onClick={clickEvent} style={{right: "110px"}}>
+      <div>이력서</div>
     </ToggleButton>
   )
 }

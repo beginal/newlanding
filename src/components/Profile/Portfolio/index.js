@@ -12,7 +12,6 @@ const Portfolio_wrap = styled.div`
   background:#ff5e5c;
   transition: background 0.3s;
   position: relative;
-  margin-top: 10rem;
   
 `
 const Outer_box = styled.div`

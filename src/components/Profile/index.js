@@ -8,11 +8,12 @@ import CakeIcon from '@material-ui/icons/Cake';
 import {PortfolioButton, AboutButton} from './ToggleTab';
 import Portfolio from './Portfolio';
 import About from './About';
+import Intro from './Intro';
 
 
 const Porfile_wrap = styled.div`
   display: flex;
-  margin: 5rem 0;
+  margin: 3rem 0;
   flex-direction: column;
   justify-content: center;
   align-items:center;
@@ -33,7 +34,7 @@ const Porfile_box = styled.div`
     display: flex;
     justify-content: center;
     align-items:center;
-    margin-right: 60px;
+    margin: 0 20px;
     img {
       border-radius: 6px;
     }
@@ -41,6 +42,7 @@ const Porfile_box = styled.div`
   .resume {    
     display: flex;
     flex-direction: column;
+    margin: 0 20px;
     .name {
       display: flex;
       justify-content: center;
@@ -80,7 +82,7 @@ const Porfile = () => {
 
   const { name, birthday, text, email, phone } = ProfileState;
 
-  const [toggleTab, setToggleTab] = useState('about')  
+  const [toggleTab, setToggleTab] = useState('')  
 
   useEffect(() => {
     console.log(toggleTab)
@@ -108,6 +110,7 @@ const Porfile = () => {
       <AboutButton name="about" clickEvent={() => setToggleTab('about')} />
       <PortfolioButton name="portfolio" clickEvent={() => setToggleTab('portfolio')} />
       </Porfile_box>
+      <Intro />
       { ToggleTabs() }
     </Porfile_wrap>
   )
