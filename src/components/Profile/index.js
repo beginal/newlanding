@@ -70,8 +70,8 @@ const Porfile_box = styled.div`
 const ProfileState = {
   name: "함 준 호",
   birthday: "1995.10.26",
-  phone: '010-1234-1234',
-  email: 'example@gmail.com',
+  phone: '010-9215-9984',
+  email: 'jun10ho26@gmail.com',
   text: [
     "블라블라",
     "블라블라22",

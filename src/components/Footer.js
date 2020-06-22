@@ -32,7 +32,7 @@ const Footers = styled.div`
       display: flex;
       align-items:center;
       justify-content: center;
-      transition: background 2s;
+      transition: background 1s;
        &:hover {
          background: green;
          cursor:pointer;
@@ -57,7 +57,7 @@ const Footer = () => {
             <img src="image/github.png" alt="github" ></img>
           </div>
         </a>
-        <a href="mailto:example@gmail.com">
+        <a href="mailto:jun10ho26@gmail.com">
           <div className="moveit">
             <img src="image/mail.png" alt="email" ></img>
           </div>

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/newlanding/static/js/main.102fddfc.chunk.js",
-    "main.js.map": "/newlanding/static/js/main.102fddfc.chunk.js.map",
+    "main.js": "/newlanding/static/js/main.acca237c.chunk.js",
+    "main.js.map": "/newlanding/static/js/main.acca237c.chunk.js.map",
     "runtime-main.js": "/newlanding/static/js/runtime-main.8ff733d1.js",
     "runtime-main.js.map": "/newlanding/static/js/runtime-main.8ff733d1.js.map",
     "static/js/2.df289581.chunk.js": "/newlanding/static/js/2.df289581.chunk.js",
     "static/js/2.df289581.chunk.js.map": "/newlanding/static/js/2.df289581.chunk.js.map",
     "index.html": "/newlanding/index.html",
-    "precache-manifest.48c9392a56486a33ab1aea6bccb4e953.js": "/newlanding/precache-manifest.48c9392a56486a33ab1aea6bccb4e953.js",
+    "precache-manifest.6313477d29567a2a4630e703cd4744d0.js": "/newlanding/precache-manifest.6313477d29567a2a4630e703cd4744d0.js",
     "service-worker.js": "/newlanding/service-worker.js",
     "static/js/2.df289581.chunk.js.LICENSE.txt": "/newlanding/static/js/2.df289581.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8ff733d1.js",
     "static/js/2.df289581.chunk.js",
-    "static/js/main.102fddfc.chunk.js"
+    "static/js/main.acca237c.chunk.js"
   ]
 }
